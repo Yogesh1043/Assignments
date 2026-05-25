@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>🎓 MoodleX</h2>
+        </div>
+
+        <ul class="menu">
+            <li class="active"><i class="fa fa-home"></i> Home</li>
+            <li><i class="fa fa-bullhorn"></i> Announcements</li>
+            <li><i class="fa fa-book"></i> Assignments</li>
+            <li><i class="fa fa-folder"></i> Resources</li>
+            <li><i class="fa fa-user"></i> Profile</li>
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header>
+
+            <div>
+                <h1>Fundamentals of Web Development</h1>
+                <p>South Asian University</p>
+            </div>
+
+            <div class="header-right">
+                <div id="clock"></div>
+
+                <button onclick="showNotification()">
+                    Notifications
+                </button>
+            </div>
+
+        </header>
+
+        <!-- COURSE INFO -->
+
+        <section class="card course-info">
+
+            <h2>Course Information</h2>
+
+            <div class="info-grid">
+
+                <div>
+                    <h3>Instructor</h3>
+                    <p>Mr. Kundan Sharma</p>
+                </div>
+
+                <div>
+                    <h3>Semester</h3>
+                    <p>Semester 2 - 2026</p>
+                </div>
+
+                <div>
+                    <h3>Course Code</h3>
+                    <p>CSE202</p>
+                </div>
+
+                <div>
+                    <h3>Progress</h3>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ANNOUNCEMENTS -->
+
+        <section class="card">
+
+            <div class="section-title">
+
+                <h2>Announcements</h2>
+
+                <button onclick="toggleAnnouncements()">
+                    Show / Hide
+                </button>
+
+            </div>
+
+            <div id="announcementBox">
+
+                <div class="announcement">
+                    📢 Assignment 6 submission deadline is next Monday.
+                </div>
+
+                <div class="announcement">
+                    📢 Lab classes will begin from next week.
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ASSIGNMENTS -->
+
+        <section class="card">
+
+            <h2>Assignments</h2>
+
+            <div class="assignment-list">
+
+                <div class="assignment">
+                    <div>
+                        <h3>HTML Portfolio</h3>
+                        <p>Due: 15 June 2026</p>
+                    </div>
+
+                    <span class="pending">
+                        Pending
+                    </span>
+                </div>
+
+                <div class="assignment">
+                    <div>
+                        <h3>CSS Dashboard</h3>
+                        <p>Due: 20 June 2026</p>
+                    </div>
+
+                    <span class="urgent">
+                        Urgent
+                    </span>
+                </div>
+
+                <div class="assignment">
+                    <div>
+                        <h3>JavaScript Quiz</h3>
+                        <p>Due: 25 June 2026</p>
+                    </div>
+
+                    <span class="completed">
+                        Completed
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RESOURCES -->
+
+        <section class="card">
+
+            <h2>Resources</h2>
+
+            <div class="resources">
+
+                <button onclick="downloadAlert()">
+                    📄 Lecture Notes
+                </button>
+
+                <button onclick="downloadAlert()">
+                    📘 Lab Manual
+                </button>
+
+                <button onclick="downloadAlert()">
+                    🎥 Recorded Lectures
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+            © 2026 MoodleX Dashboard | Developed by Yogesh
+        </footer>
+
+    </main>
+
+    <!-- POPUP -->
+
+    <div id="popup">
+        Notification Sent Successfully ✅
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
